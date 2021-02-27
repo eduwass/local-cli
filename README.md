@@ -27,7 +27,7 @@ $ npm install -g @getflywheel/local-cli
 $ local-cli COMMAND
 running command...
 $ local-cli (-v|--version|version)
-@getflywheel/local-cli/0.0.5 darwin-x64 node-v12.13.0
+@getflywheel/local-cli/0.0.5 darwin-x64 node-v14.9.0
 $ local-cli --help [COMMAND]
 USAGE
   $ local-cli COMMAND
@@ -38,6 +38,7 @@ USAGE
 <!-- commands -->
 * [`local-cli help [COMMAND]`](#local-cli-help-command)
 * [`local-cli list-sites`](#local-cli-list-sites)
+* [`local-cli open-shell SITEID`](#local-cli-open-shell-siteid)
 * [`local-cli start-site SITEID`](#local-cli-start-site-siteid)
 * [`local-cli stop-site SITEID`](#local-cli-stop-site-siteid)
 
@@ -56,7 +57,7 @@ OPTIONS
   --all  see all commands in CLI
 ```
 
-_See code: [@oclif/plugin-help](https://github.com/oclif/plugin-help/blob/v3.2.0/src/commands/help.ts)_
+_See code: [@oclif/plugin-help](https://github.com/oclif/plugin-help/blob/v3.2.2/src/commands/help.ts)_
 
 ## `local-cli list-sites`
 
@@ -71,6 +72,20 @@ EXAMPLE
 ```
 
 _See code: [src/commands/list-sites.ts](https://github.com/getflywheel/local-cli/blob/v0.0.5/src/commands/list-sites.ts)_
+
+## `local-cli open-shell SITEID`
+
+Open Site Shell
+
+```
+USAGE
+  $ local-cli open-shell SITEID
+
+OPTIONS
+  -h, --help  show CLI help
+```
+
+_See code: [src/commands/open-shell.ts](https://github.com/getflywheel/local-cli/blob/v0.0.5/src/commands/open-shell.ts)_
 
 ## `local-cli start-site SITEID`
 
